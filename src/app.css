@@ -1,3 +1,32 @@
+@import '@fontsource/manrope';
+@import '@fontsource/jetbrains-mono';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+	--r-main-font: 'Manrope' !important;
+	--r-heading-font: 'Manrope' !important;
+	--r-code-font: 'JetBrains Mono' !important;
+	--r-link-color: aqua !important;
+	--r-link-color-hover: aqua !important;
+}
+
+.hljs-title,
+.hljs-keyword {
+	font-weight: normal !important;
+}
+
+.reveal pre,
+.reveal code {
+	overflow: hidden !important;
+}
+
+.reveal pre {
+	box-shadow: none !important;
+}
+
+.hljs {
+	background: none !important;
+}
